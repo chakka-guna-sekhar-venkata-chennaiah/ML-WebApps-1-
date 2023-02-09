@@ -1,11 +1,11 @@
-import os
+
 import streamlit as st
 import streamlit.components.v1 as com
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-os.chdir('/Users/apple/Downloads/logistic_regression')
+
 data=pd.read_csv('2.csv',na_values=["??","####"])
 x=data.iloc[:,[0,1]].values
 y=data.iloc[:,-1].values
