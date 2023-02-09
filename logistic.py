@@ -26,7 +26,7 @@ salary=st.number_input('Enter your salary',
                     min_value=0,
                     max_value=100000000,
                     step=1)
-
+st.write("After entering the slary, press the enter symbol then click for the result")
 result=model.predict(s.transform([[age,salary]]))[0]
 if(st.button("Result")):
     if(result==1):
